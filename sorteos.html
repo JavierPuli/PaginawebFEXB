@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="Imagenes/logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="Index.html"><img class="logo" src="Imagenes/logo.jpeg" height="50" alt="paginaprincipal"></a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sorteos.html">Sorteos</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.google.es/maps">Localización</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Participa en el Sorteo</h1>
+        <form action="participacion.html" method="post" enctype="multipart/form-data" class="card p-4 shadow">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="numero" class="form-label">Número de Teléfono:</label>
+                <input type="number" id="numero" name="numero" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="archivo" class="form-label">Subir Foto del DNI:</label>
+                <input type="file" id="archivo" name="archivo" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="genero" class="form-label">Género:</label>
+                <select id="genero" name="genero" class="form-select" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" id="aceptar" name="aceptar" class="form-check-input" required>
+                <label for="aceptar" class="form-check-label">Acepto los términos y condiciones</label>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferencia de Contacto:</label>
+                <div class="form-check">
+                    <input type="radio" id="email_contact" name="contacto" value="email" class="form-check-input" required>
+                    <label for="email_contact" class="form-check-label">Email</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="phone_contact" name="contacto" value="phone" class="form-check-input" required>
+                    <label for="phone_contact" class="form-check-label">Teléfono</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Reiniciar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://www.instagram.com" target="_blank" class="me-3"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon" style="height: 30px;"></a>
+                <a href="https://www.facebook.com" target="_blank" class="me-3"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon" style="height: 30px;"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="Imagenes/twitter.jpg" alt="Twitter X" class="icon" style="height: 30px;"></a>
+            </div>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">FEXB</span> by <span property="cc:attributionName">Javier Pulido Alcon</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
